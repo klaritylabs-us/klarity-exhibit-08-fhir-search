@@ -1,0 +1,19 @@
+[package]
+name = "klarity-exhibit-08-fhir-search"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+description = "FHIR R4 REST search parameter checks"
+publish = false
+
+[lib]
+name = "fhir_search_exhibit"
+path = "src/lib.rs"
+
+[[bin]]
+name = "validate-search"
+path = "src/bin/validate_search.rs"
+
+[dependencies]
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
